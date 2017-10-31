@@ -33,6 +33,7 @@ An application servient can lookup TDs registered the remote proxy servient with
 ![images](/images/seq_lookup.png)
 
 *Example: using HTTP*
+
 (11) HTTP GET http://rps.example.com/Things/<BR>
 Body: none<BR>
 
@@ -51,6 +52,7 @@ The application servient sends a request to get the value of the property of the
 ![images](/images/seq_getproperty.png)
 
 *Example: using HTTP*
+
 The application gets a value of a certain property of the device servient. For this purpose, it gets the URI for the property from TD of the device servient.
 
 (21) HTTP GET http://rps.example.com/lps1/Things/deviceName/Property/temperature<BR>
@@ -81,6 +83,7 @@ The application servient sends a request to set the value to the property of the
 ![images](/images/seq_setproperty.png)
 
 *Example: using HTTP*
+
 The application puts a value of a certain property of the device servient. For this purpose, it gets the URI for the property from TD of the device servient.
 
 (31) HTTP PUT http://rps.example.com/lps1/Things/deviceName/Property/status<BR>
@@ -98,6 +101,7 @@ The application servient sends a request to subscribe the property of the device
 ![images](/images/seq_subscribe.png)
 
 *Example: using HTTP*
+
 The application subscribes an event of the device servient to be periodically notified. The application gets URI for this event and send a request to the remote proxy servient.
 
 (41) HTTP POST http://rps.example.com/lps1/Things/deviceName/Event/change<BR>
@@ -130,6 +134,7 @@ The application servient sends a request to unsubscribe to the remote proxy serv
 ![images](/images/seq_unsubscribe.png)
 
 *Example: using HTTP*
+
 The application unsubscribes the event “change. The application deletes URI for this event and send a request to the remote proxy servient.
 
 (51) HTTP DELETE http://rps.example.com/lps1/Things/deviceName/Event/change<BR>
@@ -156,6 +161,7 @@ The device servient unregister from the local proxy servient before shutdown. Th
 ![images](/images/seq_unregister.png)
 
 *Example: using HTTP*
+
 (61) HTTP DELETE http://lps.example.com/Things/deviceName<BR>
 Body: none<BR>
 
