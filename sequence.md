@@ -18,6 +18,7 @@ A device servient is registered to the local proxy servient and remote proxy ser
 ![images](/images/seq_register.png)
 
 *Example: using HTTP*
+
 (1) HTTP POST http://lps.example.com/Things/register<BR>
 Body: TD<BR>
 (2) 201 Created<BR>
