@@ -96,7 +96,7 @@ The following checking points must be completed together with a partner in serve
 
 ##### CoAP
 
-* NA
+* YES - NodeRED
 
 ##### MQTT
 
@@ -114,7 +114,7 @@ The following checking points must be completed together with a partner in serve
 
 ##### CoAP
 
-* NA
+* YES - NodeRED
 
 ##### MQTT
 
@@ -154,7 +154,7 @@ The following checking points must be completed together with a partner in serve
 
 ##### CoAP
 
-* NA
+* YES - NodeRED
 
 ##### MQTT
 
@@ -176,7 +176,7 @@ The following checking points must be completed together with a partner in serve
 
 ##### CoAP
 
-* NA
+* YES - NodeRED
 
 ##### MQTT
 
@@ -311,7 +311,7 @@ The following checking points must be completed together with a partner in clien
 #### 3.3.7 Security
 
 The following in combination with HTTPS (HTTP + TLS) are supported by both Online Simulator and Smart Home
-* bearer
+* 
 
 
 #### 3.3.8 Semantic integration
