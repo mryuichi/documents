@@ -51,7 +51,7 @@ NA
     <td rowspan="2">HTTP(s)+WS</td>
     <td>Local gateway</td>
     <td>HTTP</td>
-    <td>Rotating Light, Sensors(Humidity sensor, Temperature sensor, Dust)</td>
+    <td>Rotating Light, Sensors(Humidity sensor, Temperature sensor, Dust sensor)</td>
   </tr>
 </table>
 
