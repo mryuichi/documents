@@ -15,6 +15,9 @@ Test results can have one of 4 states:
    * Comment if feature is planned to be implemented in the future
 
 ### 3.1 Testing Individually
+
+![result](images/diagram-connected.png)
+
 #### 3.1.1 Validate Simplified TDs
 
 * OK
