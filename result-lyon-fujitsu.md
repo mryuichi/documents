@@ -16,6 +16,8 @@ Test results can have one of 4 states:
 
 ### 3.1 Testing Individually
 
+![result](images/diagram-fujitsu-lyon.png)
+
 ![result](images/diagram-connected.png)
 
 #### 3.1.1 Validate Simplified TDs
