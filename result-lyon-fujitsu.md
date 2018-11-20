@@ -8,12 +8,12 @@ This section lists the infrastructure available for the PlugFest, which can be u
 ### Overview of Fujitsu plugfest system
 
 Figure 1. shows Fujitsu plugfest diagram to be provided.  There are 1 remote proxy servient and 2 local proxy servients in the different locations.  One of the local proxies was in Lyon, Lyon, and the other was in Kanazawa, Japan.  The remote proxy servient was in Nagoya, Japan.
-Some device servients were connected to these local proxy serivents.  Air pressure sensor, Rotating light and members' devices connected to the local proxy servient in Lyon.  Illumination sensor and some Home appliances connected to the local serivient in Japan, set up in the smart home.  These proxy servient have the TD directories that have TD of all device to be connected.  The remote proxy servient was connected with these local proxy servients and local TDs.  TDs' addresss (URL) in these proxy servientes were renamed in each proxy serivnet because all messages from application and upper proxies have to relay 
+Some device servients were connected to these local proxy serivents.  Air pressure sensor, Rotating light and members' devices connected to the local proxy servient in Lyon.  Illumination sensor and some Home appliances connected to the local serivient in Japan, set up in the smart home.  These proxy servient have the TD directories that have TD of all device to be connected.  The remote proxy servient was connected with these local proxy servients and local TDs.  TDs' addresss (URL) in these proxy servientes were renamed in each proxy serivnet because all messages from application and upper proxies have to be relayed.
 
 ![result](images/fujitsu-lyon-diagram.png)
 Figure 1. Fujitsu diagram for plugfest in Lyon
 
-Fujitsu proxy servients had connected to many appliations and devices. 
+Figure 2. shows Fujitsu booth in the plugfest.  Air pressure sensor was in the bag in the left, connected the local proxy with Wi-Fi.  The local proxy servient runed on the linux mini server, white box in the center.  The rotating light in the right, connected with EthernCAT controller in between the light and the proxy.  the contoller turned ON/OFF to power supply to the light according to the messeage from the proxy. 
 
 ![result](images/fujitsu-lyon-demo.png)
 Figure 2. Photo of the boothe.
