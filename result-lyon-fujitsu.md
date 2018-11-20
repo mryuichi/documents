@@ -2,6 +2,30 @@
 
 This document summerizes the results of the Lyon PlugFest held Oct 20 and 21.
 
+## 1 PlugFest Infrastructure
+This section lists the infrastructure available for the PlugFest, which can be used for individual testing (see [Section 3.1](#31-testing-individually))
+
+### Overview of Fujitsu plugfest system
+
+Figure 1. shows Fujitsu plugfest systemd to be provided. There are some proxy serivnets located in different places. The remote proxy servient and 1 local proxy servient 
+
+![result](images/diagram-fujitsu-lyon.png)
+Figure 1. Fujitsu diagram for plugfest in Lyon
+
+Fujitsu proxy servients had connected to many appliations and devices. 
+
+![result](images/photo-fujitsu.png)
+Figure 2. Photo of the boothe.
+
+Figure 3. shows our device servient equipped with temperature, humidity, air pressure, and particle sensors. This device has WoT interface on Wi-Fi communication module. 
+
+![result](images/diagram-connected.png)
+Figure 3. device servient with Wi-Fi module WoT stack implemented
+
+
+
+## 2 Particpants and Servients
+
 ## 3 Checking Points 
 
 Test results can have one of 4 states:
@@ -14,16 +38,14 @@ Test results can have one of 4 states:
 * NA: Test not applicable, e.g., because feature is not implemented
    * Comment if feature is planned to be implemented in the future
 
-### 3.1 Testing Individually
+### Result summary
 
-![result](images/diagram-fujitsu-lyon.png)
-Figure. Fujitsu diagram for plugfest in Lyon
-
-![result](images/photo-fujitsu.png)
-Figure. Photo
+The figure below shows our results of what and how to connect to our proxies.
 
 ![result](images/diagram-connected.png)
 Figure. Result summary of plugfest
+
+### 3.1 Testing Individually
 
 #### 3.1.1 Validate Simplified TDs
 
