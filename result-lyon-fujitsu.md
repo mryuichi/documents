@@ -7,21 +7,21 @@ This section lists the infrastructure available for the PlugFest, which can be u
 
 ### Overview of Fujitsu plugfest system
 
-Figure 1. shows Fujitsu plugfest systemd to be provided. There are some proxy serivnets located in different places. The remote proxy servient and 1 local proxy servient 
+Figure 1. shows Fujitsu plugfest diagram to be provided.  There are 1 remote proxy servient and 2 local proxy servients in the different locations.  One of the local proxies was in Lyon, Lyon, and the other was in Kanazawa, Japan.  The remote proxy servient was in Nagoya, Japan.
+Some device servients were connected to these local proxy serivents.  Air pressure sensor, Rotating light and members' devices connected to the local proxy servient in Lyon.  Illumination sensor and some Home appliances connected to the local serivient in Japan, set up in the smart home.  These proxy servient have the TD directories that have TD of all device to be connected.  The remote proxy servient was connected with these local proxy servients and local TDs.  TDs' addresss (URL) in these proxy servientes were renamed in each proxy serivnet because all messages from application and upper proxies have to relay 
 
-![result](images/diagram-fujitsu-lyon.png)
+![result](images/fujitsu-lyon-diagram.png)
 Figure 1. Fujitsu diagram for plugfest in Lyon
 
 Fujitsu proxy servients had connected to many appliations and devices. 
 
-![result](images/photo-fujitsu.png)
+![result](images/fujitsu-lyon-demo.png)
 Figure 2. Photo of the boothe.
 
 Figure 3. shows our device servient equipped with temperature, humidity, air pressure, and particle sensors. This device has WoT interface on Wi-Fi communication module. 
 
-![result](images/diagram-connected.png)
+![result](images/fujitsu-wot-device.png)
 Figure 3. device servient with Wi-Fi module WoT stack implemented
-
 
 
 ## 2 Particpants and Servients
@@ -42,7 +42,7 @@ Test results can have one of 4 states:
 
 The figure below shows our results of what and how to connect to our proxies.
 
-![result](images/diagram-connected.png)
+![result](images/fujitsu-lyon-results.png)
 Figure. Result summary of plugfest
 
 ### 3.1 Testing Individually
