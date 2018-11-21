@@ -42,7 +42,7 @@ Test results can have one of 4 states:
 
 The figure below shows our results of what and how to connect to our proxies.
 
-![result](images/fujitsu-lyon-results.png)
+![result](images/fujitsu-lyon-result.png)
 Figure. Result summary of plugfest
 
 ### 3.1 Testing Individually
