@@ -61,7 +61,7 @@ This section defines components that make a Web of Things entity, clarifies each
 how a web of Things as a whole works. The architecture described here is derived from the Web of Things use cases
 as well as technical requirements extracted from them.
 
-## High-level architecture
+### High-level architecture
 
 Overview of WoT component’s behavior is explained using a couple of system configuration diagrams. First, shown below 
 is a configuration that consists of a device and an application shown below.
@@ -94,7 +94,7 @@ uses a new identifier different from the original device TD’s, and changes com
 then creates an ExposedThing that serves as the Thing for the TD. An application communicates with a device via a proxy 
 through a ConsumedThing that works according to the TD for the shadow device.
 
-## Simple configuration of WoT servient
+### Simple configuration of WoT servient
 
 The remainder of this section discusses and clarifies the inner structure of a servient.
 
