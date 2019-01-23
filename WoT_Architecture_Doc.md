@@ -4,7 +4,7 @@ The previous section delineated the Web of Things abstract architecture by showi
 patterns for combining architectural components. This section describes technical requirements derived from the abstract 
 architecture.
 
-Components consisting Web of Things and the Web of Things architecture
+### Components consisting Web of Things and the Web of Things architecture
   Observation of the use cases shows that basic components such as devices, applications that access and control those 
   devices, proxies (e.g. gateways and platforms) that sit between devices and applications to link them together, 
   directories that provides device search functionality are required.
