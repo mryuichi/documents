@@ -123,13 +123,14 @@ creates a shadow of the device as well as a TD for the shadow device where the i
 are appropriately described to serve for the application. An ExposedThing is created based on this TD, and a TD manager 
 notifies other servients of the TD.
 
-![images](/images/servient-detail.png)
+![images](/images/application-device-detail.png)
 
 Below is a WoT architecture diagram that summarizes the inner structure of a WoT servient. A runtime creates ExposedThing 
 or ConsumedThing based on TDs, provides an abstract interface that through protocol binding can interact with other servients. 
 Note that the diagram also contains a legacy device that does not by itself support WoT abstract interface. A device interface 
 adapter converts legacy interface into an abstract interface to allow them to interact with the runtime.
 
-![images](/images/application-device-detail.png)
+![images](/images/servient-detail.png)
+
 
 
