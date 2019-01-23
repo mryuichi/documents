@@ -50,7 +50,7 @@ Components consisting Web of Things and the Web of Things architecture
   be able to process search operations with search keys such as keywords from the general description in the device 
   description or information models.
 
-## Security Function
+### Security Function
   Security information related to devices and virtual devices needs to be described in device descriptions. 
   This includes information for authentication/authorization and payload encryptions. 
 
