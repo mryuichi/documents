@@ -66,7 +66,7 @@ as well as technical requirements extracted from them.
 Overview of WoT component’s behavior is explained using a couple of system configuration diagrams. First, shown below 
 is a configuration that consists of a device and an application shown below.
 
-<image>
+![images](/images/application-device.png)
 
 Functions of a device is described by a Thing Description (TD). A TD describes, among other things, a device’s identifier, 
 functions and attributes of a device implemented internally, communication protocols (i.e. transport layer) information. 
@@ -79,7 +79,7 @@ an application and a device are realized by ConsumedThing and ExposedThing conne
 
 Next, in the below configuration, an application and a device connect to each other via a proxy. 
 
-<image>
+![images](/images/application-proxy-device.png)
 
 A proxy contains both ExposedThing and ConsumedThing functionality, and relay messages that are exchanged between 
 an application and a device. In a proxy, a ConsumedThing creates a shadow of the device, and an application can access 
@@ -112,7 +112,7 @@ servients or requesting other servients of TDs, and creates a ConsumedThing base
 an application servient are usually implemented as an application. The abstract interface of a ConsumedThing is provided 
 as a programming language (such as JavaScript) interface, and the application achieves its functions by using this interface.
 
-<image>
+![images](/images/application-device-detail.png)
 
 Next, inner structure of a servient is explained based on the structure of a proxy servient that connects a device servient 
 and application servient together.
@@ -123,12 +123,13 @@ creates a shadow of the device as well as a TD for the shadow device where the i
 are appropriately described to serve for the application. An ExposedThing is created based on this TD, and a TD manager 
 notifies other servients of the TD.
 
-<image>
+![images](/images/servient-detail.png)
 
 Below is a WoT architecture diagram that summarizes the inner structure of a WoT servient. A runtime creates ExposedThing 
 or ConsumedThing based on TDs, provides an abstract interface that through protocol binding can interact with other servients. 
 Note that the diagram also contains a legacy device that does not by itself support WoT abstract interface. A device interface 
 adapter converts legacy interface into an abstract interface to allow them to interact with the runtime.
 
-<image>
+![images](/images/application-device-detail.png)
+
 
