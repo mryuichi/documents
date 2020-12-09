@@ -12,7 +12,7 @@ In the plugfest in June, the proxy could interpret all TDs of accessible devices
 However, some TDs could NOT be done in September.  The reason why it doesn't work is the proxy cannot interpret correctly the hierarchically 
 defined properties in your TDs.  Until the previous plugfest, all TDs were described with one layer properties, so the proxy succeeded to read 
 them and generate shadows from TDs.  However, TUM TDs' properties on this plugfest are defined in three layers 
-like "lightinformation", "state" and "on" for the Hue color lamp, for example.
+like "lightinformation", "state" and "on" for [the Hue color lamp](https://github.com/w3c/wot-testing/blob/master/events/2020.09.Online/TDs/TUM/HueColorLight1.td.jsonld), for example.
 
 I don't mean this TD is wrong. I believe these layered property descriptions are necessary, as some standards use such as Broadband forum TR-069, 
 eclass, and so on.
