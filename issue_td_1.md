@@ -4,7 +4,9 @@ Thing Description has a great possibility that many things could be described.  
 if there is not any restriction on the way to describe TD.  Some restrictions on how to describe TD should be necessary 
 because we must have embedded the TD interpreter to the proxy in advance.
 
-This proposal is based on the experience of the past two plugfests.  Fujitsu provided the proxy service that can read TDs members provided first 
+This proposal is based on the experience of the past two plugfests.  
+Fujitsu provided [the proxy service](https://github.com/mryuichi/documents/blob/master/Plugfest_Outcome_Proxyservice_Fujitsu20201026.pdf) 
+that can read TDs members provided first 
 and generate shadow devices associated with them automatically. The applications handle shadows on the proxy instead of the physical devices 
 since the proxy relays messages between physical and shadow devices.
 
