@@ -47,6 +47,54 @@ the Thing Descriptions of the shadow devices already existed (retrive).
 The sensor unit for this plugfest can search the proxy server in the initializaing, and request to create 
 its shadow on it. Therefore even the device invisible from the VPN can be operated via the proxy server.
 
-## Thing Description
+## Implementations
+
+This sensor unit is composed of Wi-Fi communication modele ESP32 and some sensor devices. 
+The software was developed in C++ using Arduino. 
+The proxy server is implemented in JAVA and can run on Linux and Windows. The current server is running on a Raspberry Pi.
+The server also worked on the cloud last year but now stopped. If the local and cloud proxies are federated, the cloud application
+can operate the local devices that cannot be accessed directroy from the cloud.
+
+## Thing Description and interfaces
+
+### sensor unit
+
+The TD of the sensor unit is here. To get the TD from the unit, do the folloging:
+
+```
+curl http://192.168.0.18/.well-known/wot-thing-description
+```
+
+The sensor is invisible and cannot be connected from the VPN because it is on the local network. 
+So you can access the endpoint of this shadow device on the proxy instead of the real device. 
+The TD of the shadow device is here, which can be get from the proxy in the following way.  
+
+```
+curl http://192.168.30.134/Things/urn:com:fujitsu:sensor
+```
+where "urn:com:fujitsu:sensor" is the device ID.
+
+### proxy server
+
+Any device accessible from the proxy server can expose its endpoint to the proxy as a shadow device.
+In this case, register the TD of the device with the proxy as follows.
+
+```
+curl -X POST -H 'content-type: application/json' -d @filenme http://192.168.30.134/Things
+
+```
+where filenme is the TD file name like "fjsensor.td.jsonld".
+
+Our sensor unit searches for proxy servers and registers own TD to the proxy server.
+
+The already registered shadows can be listed in the following way.
+
+```
+curl http://192.168.30.134/Things
+
+[response]
+["urn:dev:mac:b827ebfffe4b6d0b","echonet:temperatureSensor:19216815001101","urn:com:fujitsu:sensor"]
+```
+
 
 
