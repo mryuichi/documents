@@ -12,6 +12,8 @@ On the other hand, the sensor unit is on the local network and cannot be accesse
 In this setting, the shadow device of the sensor unit has been created on the proxy server, and then
 applications on the VPN can reach to the sensor unit indirectly through the endpoint that the shadow device opens.
 
+<img src="fujitsu_fig1.png" width=50%>
+
 ## discovery
 
 The proxy server and the sensor unit support mDNS to allow discovery within the same network.
@@ -59,6 +61,8 @@ can operate the local devices that cannot be accessed directroy from the cloud.
 
 ### sensor unit
 
+<img src="fujitsu_fig2.png" width=50%>
+
 The TD of the sensor unit is here. To get the TD from the unit, do the folloging:
 
 ```
@@ -75,6 +79,8 @@ curl http://192.168.30.134/Things/urn:com:fujitsu:sensor
 where "urn:com:fujitsu:sensor" is the device ID.
 
 ### proxy server
+
+<img src="fujitsu_fig3.png" width=50%>
 
 Any device accessible from the proxy server can expose its endpoint to the proxy as a shadow device.
 In this case, register the TD of the device with the proxy as follows.
