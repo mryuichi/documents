@@ -103,12 +103,17 @@ curl http://192.168.30.134/Things/urn:com:fujitsu:sensor
 
 The shadow device TD is here.
 
-## Achievements
+## Checked devices.
 
 Some devices on the Fujitsu local network, VPN, and the Internet were checked to genrate shadow TDs on our proxy
 and to be operated by the application on VPN.
 
+<img src="fujitsu_result.png" width=50%>
+
 checked devices:
+
 Counter(Siemens) on the Internet,
-LED(Hitachi) and Temperature sensor(ECHONET) on VPN,
-Sensor unit(FUjitsu) on the local network.
+
+LED(Hitachi) and temperature sensor(ECHONET) on VPN,
+
+sensor unit(FUjitsu) on the local network.
