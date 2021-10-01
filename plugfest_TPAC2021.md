@@ -92,9 +92,23 @@ The already registered shadows can be listed in the following way.
 ```
 curl http://192.168.30.134/Things
 
-[response]
-["urn:dev:mac:b827ebfffe4b6d0b","echonet:temperatureSensor:19216815001101","urn:com:fujitsu:sensor"]
+(response) ["urn:dev:mac:b827ebfffe4b6d0b","echonet:temperatureSensor:19216815001101","urn:com:fujitsu:sensor"]
 ```
 
+The response includes the list of the shadow device IDs. This TD can be got from the proxy server as follows:
 
+```
+curl http://192.168.30.134/Things/urn:com:fujitsu:sensor
+```
 
+The shadow device TD is here.
+
+## Achievements
+
+Some devices on the Fujitsu local network, VPN, and the Internet were checked to genrate shadow TDs on our proxy
+and to be operated by the application on VPN.
+
+checked devices:
+Counter(Siemens) on the Internet,
+LED(Hitachi) and Temperature sensor(ECHONET) on VPN,
+Sensor unit(FUjitsu) on the local network.
